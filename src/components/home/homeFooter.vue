@@ -5,9 +5,11 @@
 		</div>
 		<span>关注公众号： All软件开发</span>
 		<div class="my-1">服务热线：<a class="grayff" :href="'tel:'+webdata.cellphone">{{webdata.cellphone}} </a> </div>
-		<span space="ensp" >
-			© {{webdata.icpPreparation}}
-		</span>
+		<a href="https://beian.miit.gov.cn" style="color: inherit;">
+			<span space="ensp" >
+				© {{webdata.icpPreparation}}
+			</span>
+		</a>
 	</div>
 </template>
 <script>

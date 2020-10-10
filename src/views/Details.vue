@@ -12,7 +12,7 @@
 			}
 		},
     async created(){
-            const strId = this.$route.params.id;
+            const strId = this.$route.query.id;
             const id = Number(strId)
             const {data} = await this.$H.post('home/selectByMenusIdAndArticle',{menuId:id});
             console.log('富文本',data);

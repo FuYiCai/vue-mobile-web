@@ -68,12 +68,12 @@
             },
             navTo(item){
                 if(item.path === 'cate') {
-                    return this.$router.push({ path: `/cate/${item.id}` }) 	
+                    return this.$router.push({ path:'/cate',query:{id:item.id} }) 	
 				};
 				if(item.path === "details") {
-                    return this.$router.push({ path: `/details/${item.id}` }) 
+                    return this.$router.push({ path:'/details',query:{id:item.id} }) 
                 }
-                return this.$router.push({ path: `/list/${item.id}` }) 
+                return this.$router.push({ path:'/list',query:{id:item.id} }) 
             },
             
             // 头部菜单

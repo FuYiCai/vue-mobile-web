@@ -1,7 +1,7 @@
 <template>
-    <van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
+    <van-swipe  :autoplay="3000" height="200">
         <van-swipe-item v-for="(item,index) in initArr" :key="index">
-           <van-image  width="100%" height="100%"  fit="cover"  :src="item.path" />
+		   <img v-lazy="item" />
         </van-swipe-item>
     </van-swipe>
 </template>
@@ -23,11 +23,13 @@
 	}
 </script>
 <style  scoped>
-  .my-swipe .van-swipe-item {
-    color: #fff;
-    font-size: 20px;
-    line-height: 150px;
-    text-align: center;
-    background-color: #39a9ed;
+  .custom-indicator {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    padding: 2px 5px;
+    font-size: 12px;
+    background: rgba(0, 0, 0, 0.1);
   }
+
 </style>

@@ -14,15 +14,15 @@ Vue.use(VueRouter)
     component: Home
   },
   {
-    path: '/details/:id',
+    path: '/details',
     component: Details
   },
   {
-    path: '/List/:id',
+    path: '/list',
     component: List
   },
   {
-    path: '/Cate/:id',
+    path: '/cate',
     component: Cate
   },
   {

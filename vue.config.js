@@ -2,11 +2,11 @@
 module.exports = {
     pwa: {
       iconPaths: {
-        favicon32: 'favicon.png',
-        favicon16: 'favicon.png',
-        appleTouchIcon: 'favicon.png',
-        maskIcon: 'favicon.png',
-        msTileImage: 'favicon.png'
+        favicon32: 'favicon.ico',
+        favicon16: 'favicon.ico',
+        appleTouchIcon: 'favicon.ico',
+        maskIcon: 'favicon.ico',
+        msTileImage: 'favicon.ico'
       }
     },
     pages:{
@@ -18,7 +18,7 @@ module.exports = {
     devServer: {
       proxy: {
         '/api': {  
-          target: 'http://192.168.2.164:8080/api/',
+          target: 'https://sys.api.yulangsat.com/api/',
           ws: true,
           changeOrigin: true,
           pathRewrite : {

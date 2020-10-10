@@ -27,7 +27,9 @@
 			}
 		},
         async created() {
-            const strId = this.$route.params.id;
+			console.log('this.$route',this.$route);
+            // const strId = this.$route.params.id;
+            const strId = this.$route.query.id;
             const id = Number(strId)
             const {data} =await this.$H.post('home/selectByMenuIdAndDevcases',{menuId:id});
             console.log('案例',data);

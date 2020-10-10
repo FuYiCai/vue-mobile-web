@@ -3,7 +3,18 @@
     <router-view/>
   </div>
 </template>
-
+<script>
+	export default {
+		created() {
+			const sUserAgent = navigator.userAgent.toLowerCase();
+			if (/ipad|iphone|midp|rv:1.2.3.4|ucweb|android|windows ce|windows mobile/.test(sUserAgent)) {
+				  //跳转移动端页面  
+			}else{
+				  window.location.href = "https://yulangsat.com" + this.$router.history.current.fullPath
+			}
+		}
+	}
+</script>
 <style >
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

@@ -41,9 +41,9 @@ class chat  {
 		console.log('socket连接关闭')
 	}
 	// 监听连接错误
-	onError(){
+	onError(err){
 		// 用户下线
-		console.log('socket连接错误')
+		console.log('socket连接错误',err)
 	}
 	
 }

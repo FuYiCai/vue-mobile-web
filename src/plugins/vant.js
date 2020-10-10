@@ -1,11 +1,12 @@
 import Vue from 'vue';
 import { 
-    Toast,Button, Col, Row,Icon,Swipe, SwipeItem ,Image as VanImage,Form,Field,Popup,Empty,Area,  
+    Toast,Button, Col, Row,Icon,Swipe, SwipeItem ,Image as VanImage,Form,Field,Popup,Empty,Area, Lazyload  
 } from 'vant';
 
 
 
 Vue.use(Field);
+Vue.use(Lazyload);
 
 Vue.use(Popup);
 Vue.use(Empty);

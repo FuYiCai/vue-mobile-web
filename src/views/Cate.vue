@@ -38,7 +38,7 @@
 			}
 		},
 		created() {
-            const strId = this.$route.params.id;
+            const strId = this.$route.query.id;
             const id = Number(strId)
 			this.getInitData(Number(id));
 		},

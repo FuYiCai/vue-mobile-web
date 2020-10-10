@@ -49,7 +49,6 @@
                 this.itemHeight = Math.min(right,left) + 50;
             },
             clickOverlay(){
-                console.log('cldose');
                 this.$refs.video.pause()
             },
             async  getGrowpUp(){
