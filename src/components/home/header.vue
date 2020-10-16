@@ -7,7 +7,7 @@
                         <a style="color: #333333;" :href="item.path">{{item.menuName}}</a>
                     </template>
                     <template v-else>
-                        {{item.menuName}}{{item.children.length > 0 ? '&#xe7a8;' : ''}} 
+						{{item.menuName}} {{item.children.length > 0 ? '&#xe7a8;' : ''}} 
                     </template>
                 </span>
 			</div>
@@ -68,12 +68,12 @@
             },
             navTo(item){
                 if(item.path === 'cate') {
-                    return this.$router.push({ path:'/cate',query:{id:item.id} }) 	
+                    return this.$router.push({ path: `/cate/${item.id}` }) 	
 				};
 				if(item.path === "details") {
-                    return this.$router.push({ path:'/details',query:{id:item.id} }) 
+                     return this.$router.push({ path: `/details/${item.id}` }) 
                 }
-                return this.$router.push({ path:'/list',query:{id:item.id} }) 
+                 return this.$router.push({ path: `/list/${item.id}` }) 
             },
             
             // 头部菜单

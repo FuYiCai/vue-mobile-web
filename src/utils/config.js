@@ -1,5 +1,7 @@
 let _url = '';
 const h5 = 'https://sys.api.yulangsat.com/api/';
+// const h5 = 'http://192.168.1.15:8080/api/';
+
 const img_url = 'https://sys.api.yulangsat.com';
 function url () {
 	if(process.env.NODE_ENV === 'development'){

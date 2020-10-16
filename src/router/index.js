@@ -14,15 +14,15 @@ Vue.use(VueRouter)
     component: Home
   },
   {
-    path: '/details',
+    path: '/details/:id',
     component: Details
   },
   {
-    path: '/list',
+    path: '/list/:id',
     component: List
   },
   {
-    path: '/cate',
+    path: '/cate/:id',
     component: Cate
   },
   {
@@ -40,7 +40,7 @@ Vue.use(VueRouter)
 ]
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: 'hash',
   base: process.env.BASE_URL,
   routes
 })

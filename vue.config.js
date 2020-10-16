@@ -15,6 +15,8 @@ module.exports = {
         title: '贵州驭浪科技有限公司',
       },
     },
+	// http://192.168.1.15/  
+	// https://sys.api.yulangsat.com/api/
     devServer: {
       proxy: {
         '/api': {  
